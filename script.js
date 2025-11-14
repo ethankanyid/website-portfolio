@@ -61,6 +61,16 @@ async function fetchClassworkRepo() {
   }
 }
 
+// Shrinking header on scroll
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
+});
+
 // Run both on window load
 window.onload = () => {
   typeWriter();
