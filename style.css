@@ -28,20 +28,19 @@ header {
     color: #d4d9c0;
     /* warm off-white */
 }
+/* Sticky/fixed navbar for the whole page */
 .navbar {
-    position: sticky;
-    top: 0;
+    position: fixed; /* fixes navbar at top always */
+    top: 0; /* sticks to top of viewport */
+    left: 0;
+    width: 100%; /* full width */
     background: #2a2a2a;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional subtle shadow */
-}
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* ====== NAVIGATION LINKS ====== */
@@ -102,13 +101,10 @@ a:hover {
 main {
     max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 80px 1rem 0 1rem; /* top padding = navbar height */
     background: #2a2a2a;
-    /* dark muted gray */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(122, 150, 110, 0.2);
-    /* soft muted green shadow */
-
     flex-grow: 1;
 }
 
