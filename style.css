@@ -208,6 +208,10 @@ ul {
     overflow: hidden;
 }
 
+.collapsible-content.hidden {
+    display: none;
+}
+
 .arrow {
     font-size: 0.7em;
     vertical-align: middle;

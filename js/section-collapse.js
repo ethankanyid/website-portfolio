@@ -3,10 +3,10 @@ const collapsibleHeaders = document.querySelectorAll(".collapsible-header");
 collapsibleHeaders.forEach((header) => {
   header.addEventListener("click", () => {
     const content = header.nextElementSibling;
-    content.style.display = content.style.display === "none" ? "block" : "none";
+    content.classList.toggle("hidden"); // toggle a class instead of manipulating display
 
     const arrow = header.querySelector(".arrow");
-    if (content.style.display === "block") {
+    if (!content.classList.contains("hidden")) {
       arrow.innerHTML = "&#9660;"; // down arrow
     } else {
       arrow.innerHTML = "&#9654;"; // right arrow
