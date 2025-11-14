@@ -95,6 +95,26 @@ header {
     color: #7a966e;
 }
 
+/* Inline hero links */
+.hero-text p a {
+    color: #7a966e;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 2px; /* space for border if active */
+    transition: color 0.3s ease;
+}
+
+.hero-text p a:hover {
+    color: #a1b58d;
+    text-decoration: underline;
+}
+
+/* Active link */
+.hero-text p a.active {
+    border-bottom: 2px solid #7a966e;
+    font-weight: 600; /* optional for a subtle emphasis */
+}
+
 /* ====== MAIN CONTENT ====== */
 main {
     max-width: 900px;
