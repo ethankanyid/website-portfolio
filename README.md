@@ -3,7 +3,6 @@
 This is my personal website summarizing my background, skills, experience, projects, and education.
 
 ### todo
-- add certification badges
 - more interactions
 - acknowledgements
   - ChatGPT

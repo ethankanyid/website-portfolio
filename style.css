@@ -137,6 +137,19 @@ ul {
     margin: 0 auto;
 }
 
+.about-photo {
+    text-align: center;
+    max-width: 300px;
+}
+
+.about-photo figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #a38b5b;  /* gold theme color */
+    text-align: center;
+    font-style: italic;
+}
+
 .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -200,6 +213,21 @@ ul {
     flex: 1;
     min-width: 250px;
     /* prevents squishing */
+}
+
+.accolades-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.badge-circle {
+    width: 90px;       /* adjust size as needed */
+    height: 90px;      /* required for perfect circle */
+    border-radius: 50%;
+    object-fit: cover; /* ensures nice cropping if badge isn't perfectly square */
+    box-shadow: 0 0 8px rgba(163, 139, 91, 0.3);
 }
 
 /* ====== FOOTER ====== */
