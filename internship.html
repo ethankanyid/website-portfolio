@@ -27,10 +27,22 @@
 
     <div class="hero-text">
         <h1>Projects</h1>
-        <p><a href="internship.html" class="active">Internship</a> • <a href="capstone.html">Capstone</a> • <a href="homelab.html">Homelab</a></p>
+        <p><a href="internship.html" class="active">Internship</a> • <a href="capstone.html">Capstone</a> • <a
+                href="homelab.html">Homelab</a></p>
     </div>
 
     <main class="projects">
+        <div class="pdf-selector">
+            <label for="pdf-choice">Select PDF:</label>
+            <select id="pdf-choice">
+                <option value="assets/paper.pdf">Paper</option>
+                <option value="assets/poster.pdf">Poster</option>
+            </select>
+        </div>
+
+        <!-- PDF embed -->
+        <iframe id="pdf-frame" src="assets/paper.pdf" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+
 
     </main>
 
