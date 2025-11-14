@@ -6,8 +6,8 @@ Made with the help of ChatGPT.
 
 ### todo
 - add certification badges
-- collapsable sections?
 - more interactions
 - acknowledgements
   - ChatGPT
   - icon8
+- caption the photo
