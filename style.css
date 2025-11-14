@@ -213,12 +213,19 @@ ul {
     padding-right: 2rem;
 }
 
+.accolades-side ul {
+    flex: 0 0 60%;
+    margin: 0;
+    padding-left: 1rem;
+}
+
 .badge-circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 8px rgba(163, 139, 91, 0.3);
+    flex-shrink: 0;
 }
 
 /* ====== FOOTER ====== */
