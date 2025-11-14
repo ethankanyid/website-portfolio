@@ -203,14 +203,9 @@ ul {
 }
 
 .collapsible-content {
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  max-height: none; /* fully open by default */
-}
-
-
-.collapsible-content.collapsed {
-    max-height: 0;
+    display: block;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
 }
 
 .arrow {

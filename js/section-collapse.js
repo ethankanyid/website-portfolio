@@ -1,18 +1,15 @@
 const collapsibleHeaders = document.querySelectorAll(".collapsible-header");
 
 collapsibleHeaders.forEach((header) => {
-  const content = header.nextElementSibling;
-
   header.addEventListener("click", () => {
-    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-      // collapse
-      content.style.maxHeight = "0px";
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === "none" ? "block" : "none";
+
+    const arrow = header.querySelector(".arrow");
+    if (content.style.display === "block") {
+      arrow.innerHTML = "&#9660;"; // down arrow
     } else {
-      // expand
-      content.style.maxHeight = content.scrollHeight + "px";
+      arrow.innerHTML = "&#9654;"; // right arrow
     }
   });
-
-  // initialize with full height so first click works
-  content.style.maxHeight = content.scrollHeight + "px";
 });
