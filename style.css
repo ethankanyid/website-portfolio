@@ -252,6 +252,53 @@ ul {
     flex-shrink: 0;
 }
 
+/* ====== Projects ====== */
+
+/* Main container flex setup */
+main.projects {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 auto;
+    padding: 1rem;
+    height: calc(100vh - 160px); /* approximate navbar + hero + footer height */
+}
+
+/* PDF selector styling */
+.pdf-selector {
+    background: #2a2a2a;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.pdf-selector label,
+.pdf-selector select {
+    color: #d4d9c0;
+    font-size: 1rem;
+}
+
+/* PDF iframe fills remaining space */
+#pdf-frame {
+    flex: 1;
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 400px; /* ensure readability */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    main.projects {
+        height: calc(100vh - 220px); /* adjust for taller mobile header */
+    }
+
+    #pdf-frame {
+        min-height: 300px;
+    }
+}
+
+
 /* ====== FOOTER ====== */
 footer {
     background-color: #2a2a2a;
