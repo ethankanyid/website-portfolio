@@ -21,61 +21,27 @@ body {
     min-height: 100vh;
 }
 
-/* ====== STICKY HEADER ====== */
+/* ====== HEADER ====== */
 header {
-    position: fixed; /* stick to top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #2a2a2a; /* same as current */
+    background: #2a2a2a;
+    /* dark muted gray */
     color: #d4d9c0;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* subtle shadow */
-    transition: all 0.3s ease; /* smooth shrinking */
+    /* warm off-white */
 }
-
-/* Shrinking header state */
-header.shrink {
-    padding: 0.2rem 2rem;
-}
-
-/* Navbar padding adjustment */
 .navbar {
+    position: sticky;
+    top: 0;
+    background: #2a2a2a;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional subtle shadow */
 }
-
-header.shrink .navbar {
-    padding: 0.5rem 2rem;
-}
-
-/* Logo resizing */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    transition: font-size 0.3s ease;
-}
-
-header.shrink .logo {
-    font-size: 1.2rem;
-}
-
-/* Nav links resizing */
-.nav-links li a {
-    font-size: 1rem;
-    transition: font-size 0.3s ease;
-}
-
-header.shrink .nav-links li a {
-    font-size: 0.9rem;
-}
-
-/* Ensure hero text isn't overlapped */
-main {
-    padding-top: 120px; /* adjust based on header height */
 }
 
 /* ====== NAVIGATION LINKS ====== */
