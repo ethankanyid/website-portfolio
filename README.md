@@ -4,11 +4,6 @@ This is my personal website summarizing my background, skills, experience, proje
 
 ### todo
 - more interactions
-- acknowledgements
-  - ChatGPT
-  - icon8
-- caption the photo
-- update second half of resume
 - add projects (from there link to individual files?)
   - screenshots of homelab
   - add repo of homelab files

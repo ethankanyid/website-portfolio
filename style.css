@@ -217,16 +217,16 @@ ul {
 
 .accolades-side {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
 }
 
 .badge-circle {
-    width: 90px;       /* adjust size as needed */
-    height: 90px;      /* required for perfect circle */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    object-fit: cover; /* ensures nice cropping if badge isn't perfectly square */
+    object-fit: cover;
     box-shadow: 0 0 8px rgba(163, 139, 91, 0.3);
 }
 
