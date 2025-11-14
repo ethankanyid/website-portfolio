@@ -1,15 +1,15 @@
 const collapsibleHeaders = document.querySelectorAll(".collapsible-header");
 
 collapsibleHeaders.forEach((header) => {
-  header.addEventListener("click", () => {
-    const content = header.nextElementSibling;
-    content.style.display = content.style.display === "none" ? "block" : "none";
+  const content = header.nextElementSibling; // define content for this header
 
-    const arrow = header.querySelector(".arrow");
-    if (content.style.display === "block") {
-      arrow.innerHTML = "&#9660;"; // down arrow
+  header.addEventListener("click", () => {
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      // collapse
+      content.style.maxHeight = "0px";
     } else {
-      arrow.innerHTML = "&#9654;"; // right arrow
+      // expand
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 });

@@ -203,9 +203,13 @@ ul {
 }
 
 .collapsible-content {
-    display: block;
-    transition: max-height 0.3s ease;
     overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 1000px; /* large enough for content */
+}
+
+.collapsible-content.collapsed {
+    max-height: 0;
 }
 
 .arrow {

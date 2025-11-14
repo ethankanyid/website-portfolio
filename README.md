@@ -10,5 +10,4 @@ This is my personal website summarizing my background, skills, experience, proje
     - point js in index.html to homelab files
 
 ## small fixes
-- arrows dont orient correctly on load.
 - badge jumps around in collapsible section
