@@ -146,6 +146,18 @@ ul {
     min-width: 250px;
 }
 
+.title-line {
+    display: flex;
+    justify-content: space-between; /* left/right alignment */
+    align-items: baseline; /* aligns text nicely */
+    margin-bottom: 0.5rem;
+}
+
+.resume-date {
+    font-style: italic;
+    color: #d4d9c0; /* optional styling */
+}
+
 /* ====== FOOTER ====== */
 footer {
     background-color: #2a2a2a;
