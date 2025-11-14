@@ -22,7 +22,8 @@ body {
 
 /* Add top padding to avoid fixed navbar overlap */
 body {
-    padding-top: 80px; /* desktop default, adjusted in media query */
+    padding-top: 80px;
+    /* desktop default, adjusted in media query */
 }
 
 /* ====== HEADER ====== */
@@ -45,7 +46,8 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap; /* allows wrapping on small screens */
+    flex-wrap: wrap;
+    /* allows wrapping on small screens */
 }
 
 /* Navbar links */
@@ -54,7 +56,8 @@ header {
     display: flex;
     gap: 1.5rem;
     margin: 0;
-    flex-wrap: wrap; /* ensures links stay in view */
+    flex-wrap: wrap;
+    /* ensures links stay in view */
 }
 
 .nav-links li a {
@@ -148,13 +151,16 @@ ul {
 
 .title-line {
     display: flex;
-    justify-content: space-between; /* left/right alignment */
-    align-items: baseline; /* aligns text nicely */
+    justify-content: space-between;
+    /* left/right alignment */
+    align-items: baseline;
+    /* aligns text nicely */
     margin-bottom: 0rem;
 }
 
 .resume-date {
-    color: #d4d9c0; /* optional styling */
+    color: #d4d9c0;
+    /* optional styling */
 }
 
 .resume ul {
@@ -171,25 +177,29 @@ ul {
 }
 
 .collapsible-content {
-    display: block; /* start expanded */
+    display: block;
+    /* start expanded */
     transition: max-height 0.3s ease;
     overflow: hidden;
 }
 
 .arrow {
-    font-size: 0.7em; /* smaller arrow */
+    font-size: 0.7em;
+    /* smaller arrow */
     vertical-align: middle;
 }
 
 .two-column {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap; /* stacks on small screens */
+    flex-wrap: wrap;
+    /* stacks on small screens */
 }
 
 .column {
     flex: 1;
-    min-width: 250px; /* prevents squishing */
+    min-width: 250px;
+    /* prevents squishing */
 }
 
 /* ====== FOOTER ====== */
@@ -203,7 +213,8 @@ footer {
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     body {
-        padding-top: 160px; /* taller navbar on mobile */
+        padding-top: 160px;
+        /* taller navbar on mobile */
     }
 
     .nav-links {
