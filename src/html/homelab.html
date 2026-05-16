@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ethan Kanyid - Homelab</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Ethan Kanyid</div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="internship.html" class="active">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="nav-social">
+                <a href="https://linkedin.com/in/ethankanyid" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="../../assets/images/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/ethankanyid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="../../assets/images/github.png" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-text">
+        <h1>Projects</h1>
+        <p>
+            <a href="internship.html">Internship</a> &bull;
+            <a href="capstone.html">Capstone</a> &bull;
+            <a href="cyser.html">CySER</a> &bull;
+            <a href="homelab.html" class="active">Homelab</a>
+        </p>
+    </div>
+
+    <main class="projects">
+        <div class="project-skills">
+            <span class="tag proficient">Docker</span>
+            <span class="tag proficient">UNIX</span>
+            <span class="tag moderate">K3s / Kubernetes</span>
+            <span class="tag moderate">GitLab CI/CD</span>
+            <span class="tag moderate">Cloudflare</span>
+            <span class="tag moderate">ZFS</span>
+            <span class="tag limited">Local AI Stack</span>
+        </div>
+
+        <section class="project-detail">
+            <h2 class="collapsible-header">About <span class="arrow">&#9660;</span></h2>
+            <div class="collapsible-content">
+                <p>My original passion-project began with a Mac 4,1 with modified firmware to boot Linux and a third-party GPU. I now manage three servers, with two being custom-built Linux servers. It currently runs over 30 applications across multiple machines, supporting 18 users with services like media streaming, personal cloud storage, game servers, private code hosting, and a local AI stack.</p>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1.25rem;">Full write-up with screenshots and architecture diagrams coming soon.</p>
+            </div>
+        </section>
+
+        <div class="pdf-toolbar">
+            <span style="color: var(--text-secondary); font-size: 0.9rem;">Personal homelab infrastructure</span>
+            <div class="pdf-actions">
+                <a href="#" class="btn" style="opacity: 0.45; cursor: not-allowed;" title="Repository link coming soon" aria-disabled="true">Repo</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Last updated May 2026 &middot; Ethan Kanyid</p>
+        <p class="fine-print">Icons by Icons8 &middot; AI-accelerated</p>
+    </footer>
+    <script src="../js/section-collapse.js"></script>
+</body>
+</html>

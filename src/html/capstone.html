@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ethan Kanyid - Capstone</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Ethan Kanyid</div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="internship.html" class="active">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="nav-social">
+                <a href="https://linkedin.com/in/ethankanyid" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="../../assets/images/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/ethankanyid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="../../assets/images/github.png" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-text">
+        <h1>Projects</h1>
+        <p>
+            <a href="internship.html">Internship</a> &bull;
+            <a href="capstone.html" class="active">Capstone</a> &bull;
+            <a href="cyser.html">CySER</a> &bull;
+            <a href="homelab.html">Homelab</a>
+        </p>
+    </div>
+
+    <main class="projects">
+        <div class="project-skills">
+            <span class="tag proficient">Docker</span>
+            <span class="tag moderate">Arduino / ESP32</span>
+            <span class="tag moderate">ExpressJS</span>
+            <span class="tag moderate">MongoDB</span>
+            <span class="tag moderate">React + TypeScript</span>
+            <span class="tag moderate">Tailwind CSS</span>
+            <span class="tag moderate">GitHub Actions</span>
+            <span class="tag limited">Linode Cloud</span>
+        </div>
+
+        <section class="project-detail">
+            <h2 class="collapsible-header">About <span class="arrow">&#9660;</span></h2>
+            <div class="collapsible-content">
+                <p>The Smart Rack Monitoring Platform is a senior capstone project built for TELECSO, a Colombian networking company. The product monitors server rack conditions in real time — tracking things like temperature, humidity, and whether a rack door is open — and displays everything in a web dashboard. Our team was split into sections: hardware, backend, frontend, and cloud. I specifically worked on the cloud infrastructure and DevOps side, handling how the app was built, deployed, and kept running. The project placed 2nd at the WSU School of Engineering and Applied Sciences capstone showcase and is now being marketed in Colombia.</p>
+            </div>
+        </section>
+
+        <section class="project-detail">
+            <h2 class="collapsible-header">Poster <span class="arrow">&#9660;</span></h2>
+            <div class="collapsible-content">
+                <div class="pdf-toolbar">
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Smart Rack Monitoring Platform &mdash; WSU Tri-Cities Senior Capstone 2026</span>
+                    <div class="pdf-actions">
+                        <a href="https://sense.telecso.co" target="_blank" rel="noopener noreferrer" class="btn" title="Live site maintained by TELECSO &#8212; not maintained by me">&#8599;&nbsp;Live Demo *</a>
+                        <a href="#" class="btn" style="opacity: 0.45; cursor: not-allowed;" title="Repository link coming soon" aria-disabled="true">Repo</a>
+                        <a href="../../assets/pdfs/capstone.pdf" target="_blank" rel="noopener noreferrer" class="btn">&#8599;&nbsp;Open in Tab</a>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0.5rem 0 0;">* Live demo is now hosted and maintained by TELECSO &mdash; not maintained by me.</p>
+                </div>
+                <iframe id="pdf-frame" src="../../assets/pdfs/capstone.pdf" title="Capstone Poster"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Last updated May 2026 &middot; Ethan Kanyid</p>
+        <p class="fine-print">Icons by Icons8 &middot; AI-accelerated</p>
+    </footer>
+    <script src="../js/section-collapse.js"></script>
+</body>
+</html>

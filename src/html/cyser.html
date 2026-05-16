@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ethan Kanyid - CySER Research</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Ethan Kanyid</div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="internship.html" class="active">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="nav-social">
+                <a href="https://linkedin.com/in/ethankanyid" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="../../assets/images/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/ethankanyid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="../../assets/images/github.png" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-text">
+        <h1>Projects</h1>
+        <p>
+            <a href="internship.html">Internship</a> &bull;
+            <a href="capstone.html">Capstone</a> &bull;
+            <a href="cyser.html" class="active">CySER</a> &bull;
+            <a href="homelab.html">Homelab</a>
+        </p>
+    </div>
+
+    <main class="projects">
+        <div class="project-skills">
+            <span class="tag proficient">Python</span>
+            <span class="tag moderate">Kamiak HPC</span>
+            <span class="tag moderate">SLURM</span>
+            <span class="tag moderate">FOA Attack</span>
+            <span class="tag moderate">M-Attack</span>
+            <span class="tag moderate">V-Attack</span>
+        </div>
+
+        <section class="project-detail">
+            <h2 class="collapsible-header">About <span class="arrow">&#9660;</span></h2>
+            <div class="collapsible-content">
+                <p>As part of WSU&rsquo;s CySER research program in Spring 2026, our team studied how images can be subtly altered to fool AI models into giving wrong or harmful responses. My role was to test different attack methods &mdash; specifically <a href="https://github.com/jiaxiaojunqaq/foa-attack" target="_blank" rel="noopener noreferrer">FOA Attack</a>, <a href="https://github.com/VILA-Lab/M-Attack" target="_blank" rel="noopener noreferrer">M-Attack</a>, and <a href="https://github.com/Summu77/V-Attack" target="_blank" rel="noopener noreferrer">V-Attack</a> &mdash; run them on WSU&rsquo;s supercomputer (<a href="https://wpcdn.web.wsu.edu/wp-research/uploads/sites/2940/2024/02/kamiak_cheat_sheet_vs1.pdf" target="_blank" rel="noopener noreferrer">Kamiak</a>), and produce results for the rest of the team. FOA was chosen as our primary method and generated the adversarial images the team then analyzed. The rest of the team worked with those images and put together the research poster.</p>
+            </div>
+        </section>
+
+        <section class="project-detail">
+            <h2 class="collapsible-header">Poster <span class="arrow">&#9660;</span></h2>
+            <div class="collapsible-content">
+                <div class="pdf-toolbar">
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Adversarial Attacks against Closed-Source MLLMs via Feature Optimal Alignment &mdash; WSU CySER Spring 2026</span>
+                    <div class="pdf-actions">
+                        <a href="https://github.com/jiaxiaojunqaq/foa-attack" target="_blank" rel="noopener noreferrer" class="btn" title="External repository &#8212; not my code">&#8599;&nbsp;FOA Repo *</a>
+                        <a href="../../assets/pdfs/cyser.pdf" target="_blank" rel="noopener noreferrer" class="btn">&#8599;&nbsp;Open in Tab</a>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0.5rem 0 0;">* FOA Attack is an external repository &mdash; not my code. I worked with it as part of this research.</p>
+                </div>
+                <iframe id="pdf-frame" src="../../assets/pdfs/cyser.pdf" title="CySER FOA Attack Research Poster"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Last updated May 2026 &middot; Ethan Kanyid</p>
+        <p class="fine-print">Icons by Icons8 &middot; AI-accelerated</p>
+    </footer>
+    <script src="../js/section-collapse.js"></script>
+</body>
+</html>
